@@ -1,8 +1,7 @@
 <strings>
     <string id="AppName">Sports Recorder</string>
-
-    <string id="prompt">Click the menu button</string>
-
-    <string id="menu_label_1">Item 1</string>
-    <string id="menu_label_2">Item 2</string>
+    <string id="mainPrompt">Press Menu to\nStart Recording</string>
+    <string id="recordingPrompt1">Recording...</string>
+    <string id="recordingPrompt2">Press Menu again\nto stop and Save\n the Recording</string>
+    <string id="errorPrompt">This product doesn't\nhave FIT Support</string>
 </strings>
