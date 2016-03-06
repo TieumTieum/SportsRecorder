@@ -25,21 +25,28 @@ class SportsRecorderDelegate extends Ui.BehaviorDelegate {
         parentView = view;
     }
 
-    function onMenu() {
-        if( Toybox has :ActivityRecording ) {
-            var session = parentView.getSession();
-            if( ( session == null ) || ( session.isRecording() == false ) ) {
-                session = Record.createSession({:name=>"Walk", :sport=>Record.SPORT_WALKING});
-                session.start();
-                Ui.requestUpdate();
+    function onKey(event) {
+        var key = event.getKey();
+        if ( key == KEY_ENTER) {
+            if( Toybox has :ActivityRecording ) {
+                var session = parentView.getSession();
+                if( ( session == null ) || ( session.isRecording() == false ) ) {
+                    session = Record.createSession({:name=>"Walk", :sport=>Record.SPORT_WALKING});
+                    session.start();
+                    Ui.requestUpdate();
+                }
+                else if( ( session != null ) && session.isRecording() ) {
+                    session.stop();
+                    session.save();
+                    session = null;
+                    Ui.requestUpdate();
+                }
+                parentView.setSession(session);
             }
-            else if( ( session != null ) && session.isRecording() ) {
-                session.stop();
-                session.save();
-                session = null;
-                Ui.requestUpdate();
-            }
-            parentView.setSession(session);
+        }
+        else {
+            // Transmit behavior to parent
+            return false;
         }
         return true;
     }

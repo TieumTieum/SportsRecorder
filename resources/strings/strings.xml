@@ -17,8 +17,8 @@ along with SportsRecorder.  If not, see <http://www.gnu.org/licenses/>.
 
 <strings>
     <string id="AppName">Sports Recorder</string>
-    <string id="mainPrompt">Press Menu to\nStart Recording</string>
+    <string id="mainPrompt">Press Start to\nStart Recording</string>
     <string id="recordingPrompt1">Recording...</string>
-    <string id="recordingPrompt2">Press Menu again\nto stop and Save\n the Recording</string>
+    <string id="recordingPrompt2">Press Stop\nto Stop and Save\n the Recording</string>
     <string id="errorPrompt">This product doesn't\nhave FIT Support</string>
 </strings>
