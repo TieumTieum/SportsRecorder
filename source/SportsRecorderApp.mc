@@ -15,6 +15,7 @@
 
 using Toybox.Application as App;
 using Toybox.Position as Position;
+using Toybox.Sensor as Sensor;
 
 class SportsRecorderApp extends App.AppBase {
 
@@ -28,12 +29,14 @@ class SportsRecorderApp extends App.AppBase {
     //! onStart() is called on application start up
     function onStart() {
         Position.enableLocationEvents(Position.LOCATION_CONTINUOUS, method(:onPosition));
+        Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE] );
     }
 
     //! onStop() is called when your application is exiting
     function onStop() {
         sportsRecorderView.stopRecording();
         Position.enableLocationEvents(Position.LOCATION_DISABLE, method(:onPosition));
+        Sensor.setEnabledSensors( [] );
     }
 
     function onPosition(info) {
