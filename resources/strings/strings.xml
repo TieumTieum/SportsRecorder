@@ -21,4 +21,25 @@ along with SportsRecorder.  If not, see <http://www.gnu.org/licenses/>.
     <string id="recordingPrompt1">Recording...</string>
     <string id="recordingPrompt2">Press Stop\nto Stop and Save\n the Recording</string>
     <string id="errorPrompt">This product doesn't\nhave FIT Support</string>
+    <string id="menu_label_type">Activity Type</string>
+    <string id="sport_running">Running</string>
+    <string id="sport_cycling">Cycling</string>
+    <string id="sport_transition">Transition</string>
+    <string id="sport_fitness_equipment">Fitness Equipment</string>
+    <string id="sport_swimming">Swimming</string>
+    <string id="sport_basketball">Basketball</string>
+    <string id="sport_soccer">Soccer</string>
+    <string id="sport_tennis">Tennis</string>
+    <string id="sport_american_football">American Football</string>
+    <string id="sport_training">Training</string>
+    <string id="sport_walking">Walking</string>
+    <string id="sport_cross_country_skiing">Cross Country Skiing</string>
+    <string id="sport_alpine_skiing">Alpine Skiing</string>
+    <string id="sport_snowboarding">Snowboarding</string>
+    <string id="sport_rowing">Rowing</string>
+    <string id="sport_mountaineering">Mountaineering</string>
+    <string id="sport_hiking">Hiking</string>
+    <string id="sport_multisport">Multisport</string>
+    <string id="sport_paddling">Paddling</string>
+    <string id="sport_generic">Generic</string>
 </strings>

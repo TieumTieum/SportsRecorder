@@ -19,10 +19,20 @@ using Toybox.ActivityRecording as Record;
 class SportsRecorderDelegate extends Ui.BehaviorDelegate {
 
     var parentView;
+    var currentActivity = Record.SPORT_RUNNING ;
 
     function initialize( view ) {
         BehaviorDelegate.initialize();
         parentView = view;
+    }
+
+    function onMenu() {
+        Ui.pushView(new Rez.Menus.MainMenu(), new SportsRecorderMenuDelegate(self), Ui.SLIDE_UP);
+        return true;
+    }
+
+    function setActivity(activity) {
+        currentActivity = activity;
     }
 
     function onKey(event) {
@@ -31,7 +41,7 @@ class SportsRecorderDelegate extends Ui.BehaviorDelegate {
             if( Toybox has :ActivityRecording ) {
                 var session = parentView.getSession();
                 if( ( session == null ) || ( session.isRecording() == false ) ) {
-                    session = Record.createSession({:name=>"Walk", :sport=>Record.SPORT_WALKING});
+                    session = Record.createSession({:name=>"Activity", :sport=>currentActivity});
                     session.start();
                     Ui.requestUpdate();
                 }

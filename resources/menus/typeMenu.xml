@@ -1,0 +1,40 @@
+<!--
+This file is part of SportsRecorder
+
+SportsRecorder is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+SportsRecorder is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with SportsRecorder.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!-- It seems that menus can only contain 16 items so we leave out some options-->
+<menu id="TypeMenu">
+    <menu-item id="sport_running">@Strings.sport_running</menu-item>
+    <menu-item id="sport_cycling">@Strings.sport_cycling</menu-item>
+    <!--menu-item id="sport_transition">@Strings.sport_transition</menu-item-->
+    <menu-item id="sport_fitness_equipment">@Strings.sport_fitness_equipment</menu-item>
+    <menu-item id="sport_swimming">@Strings.sport_swimming</menu-item>
+    <menu-item id="sport_basketball">@Strings.sport_basketball</menu-item>
+    <menu-item id="sport_soccer">@Strings.sport_soccer</menu-item>
+    <menu-item id="sport_tennis">@Strings.sport_tennis</menu-item>
+    <menu-item id="sport_american_football">@Strings.sport_american_football</menu-item>
+    <menu-item id="sport_training">@Strings.sport_training</menu-item>
+    <menu-item id="sport_walking">@Strings.sport_walking</menu-item>
+    <menu-item id="sport_cross_country_skiing">@Strings.sport_cross_country_skiing</menu-item>
+    <menu-item id="sport_alpine_skiing">@Strings.sport_alpine_skiing</menu-item>
+    <menu-item id="sport_snowboarding">@Strings.sport_snowboarding</menu-item>
+    <menu-item id="sport_rowing">@Strings.sport_rowing</menu-item>
+    <menu-item id="sport_mountaineering">@Strings.sport_mountaineering</menu-item>
+    <menu-item id="sport_hiking">@Strings.sport_hiking</menu-item>
+    <!--menu-item id="sport_multisport">@Strings.sport_multisport</menu-item-->
+    <!--menu-item id="sport_paddling">@Strings.sport_paddling</menu-item-->
+    <!--menu-item id="sport_generic">@Strings.sport_generic</menu-item-->
+</menu>
